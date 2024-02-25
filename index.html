@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ROTMG feed power calculator</title>
+    <link rel="icon" type="image/icon" href="./figures/ambrosia.ico">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="main">
+
+        <div class="in">
+
+            <div class="page-name">
+
+                ROTMG
+
+            </div>
+
+            <div class="page-name-2">
+
+                feed power<br>calculator
+
+            </div>
+
+            <select name="rarity" id="rarity">
+                <option value="common">Common</option>
+                <option value="uncommon">Uncommon</option>
+                <option value="rare">Rare</option>
+                <option value="legendary">Legendary</option>
+                <option value="divine">Divine</option>
+            </select>
+
+            <div class="row">
+
+                <div class="input-group">
+                    <input type="number" id="ab1" min="1" max="100" required>
+                    <label for="ab1">Ability 1</label>
+                </div>
+    
+                <div class="input-group">
+                    <input type="number" id="gl1" min="1" max="100" required>
+                    <label for="gl1">Goal</label>
+                </div>
+
+            </div>
+
+
+            <div class="row">
+
+                <div class="input-group">
+                    <input type="number" id="ab2" min="1" max="100" required>
+                    <label for="ab2">Ability 2</label>
+                </div>
+    
+                <div class="input-group">
+                    <input type="number" id="gl2" min="1" max="100" required>
+                    <label for="gl2">Goal</label>
+                </div>
+
+            </div>
+
+            <div class="row">
+
+                <div class="input-group">
+                    <input type="number" id="ab3" min="1" max="100" required>
+                    <label for="ab3">Ability 3</label>
+                </div>
+    
+                <div class="input-group">
+                    <input type="number" id="gl3" min="1" max="100" required>
+                    <label for="gl3">Goal</label>
+                </div>
+
+            </div>
+
+            <button id="calculate">CALCULATE</button>
+
+            <div class="output">
+
+                <b>Feed power required for goal 1: </b> <b id="total_gl1"></b> <b> FP</b> <br>
+                <b>Feed power required for goal 2: </b> <b id="total_gl2"></b> <b> FP</b> <br>
+                <b>Feed power required for goal 3: </b> <b id="total_gl3"></b> <b> FP</b> <br>
+
+            </div>
+
+            <div class="output-2">
+
+                <b>Overall feed power required: </b> <b id="total_fp"></b> <b> FP</b> <br>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="bounded_input.js"></script>
+    <script src="calculate.js"></script>
+
+</body>
+</html>

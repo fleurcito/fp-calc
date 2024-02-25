@@ -19,6 +19,10 @@ document.getElementById("rarity").addEventListener("change", function(event){
         document.getElementById("gl2").disabled = true;
         document.getElementById("ab1").disabled = false;
         document.getElementById("gl1").disabled = false;
+        document.getElementById("ab3").value = "";
+        document.getElementById("gl3").value = "";
+        document.getElementById("ab2").value = "";
+        document.getElementById("gl2").value = "";
     }
 
     if(value === "uncommon"){
@@ -30,6 +34,8 @@ document.getElementById("rarity").addEventListener("change", function(event){
         document.getElementById("gl2").disabled = false;
         document.getElementById("ab1").disabled = false;
         document.getElementById("gl1").disabled = false;
+        document.getElementById("ab3").value = "";
+        document.getElementById("gl3").value = "";
     }
     
     if(value === "rare"){
@@ -41,6 +47,8 @@ document.getElementById("rarity").addEventListener("change", function(event){
         document.getElementById("gl2").disabled = false;
         document.getElementById("ab1").disabled = false;
         document.getElementById("gl1").disabled = false;
+        document.getElementById("ab3").value = "";
+        document.getElementById("gl3").value = "";
     }
     
     if(value === "legendary"){
